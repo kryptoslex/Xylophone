@@ -11,12 +11,12 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    var keyPlay: AVAudioPlayer!
+    
+    var keyPlay: AVAudioPlayer! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-     
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,20 +25,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed (sender: UIButton){
-        //print("play key at index = \(sender.tag)")
         playKeyAt(index: sender.tag)
     }
 
     func playKeyAt(index:Int) {
-
+        
         let path: String? = Bundle.main.path(forResource: "note\(index)", ofType: "wav")
         if let btnPath = path {
             let urlPath: URL? = URL.init(fileURLWithPath: btnPath)
-            //print("urlpath = \(urlPath!)")
+            print("urlpath = \(urlPath!)")
             
             do{
                 try keyPlay = AVAudioPlayer.init(contentsOf: urlPath!)
-                keyPlay.prepareToPlay()
                 keyPlay.play()
                 
             }catch let err as NSError{
