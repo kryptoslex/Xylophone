@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9053BAE61F7E83D10033C9C5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053BAE51F7E83D10033C9C5 /* RoundedButton.swift */; };
 		906740CA1F7E7E58007FF0D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906740C91F7E7E58007FF0D7 /* AppDelegate.swift */; };
 		906740CC1F7E7E58007FF0D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906740CB1F7E7E58007FF0D7 /* ViewController.swift */; };
 		906740CF1F7E7E58007FF0D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906740CD1F7E7E58007FF0D7 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9053BAE51F7E83D10033C9C5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		906740C61F7E7E58007FF0D7 /* Xylophone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xylophone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		906740C91F7E7E58007FF0D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906740CB1F7E7E58007FF0D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +75,6 @@
 				906740E31F7E7EEC007FF0D7 /* View */,
 				906740E21F7E7EE3007FF0D7 /* Model */,
 				906740C91F7E7E58007FF0D7 /* AppDelegate.swift */,
-				906740CB1F7E7E58007FF0D7 /* ViewController.swift */,
 				906740CD1F7E7E58007FF0D7 /* Main.storyboard */,
 				906740D01F7E7E58007FF0D7 /* Assets.xcassets */,
 				906740D21F7E7E58007FF0D7 /* LaunchScreen.storyboard */,
@@ -92,6 +93,7 @@
 		906740E31F7E7EEC007FF0D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9053BAE51F7E83D10033C9C5 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +101,7 @@
 		906740E41F7E7EF7007FF0D7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				906740CB1F7E7E58007FF0D7 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				906740CC1F7E7E58007FF0D7 /* ViewController.swift in Sources */,
+				9053BAE61F7E83D10033C9C5 /* RoundedButton.swift in Sources */,
 				906740CA1F7E7E58007FF0D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

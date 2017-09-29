@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,12 +12,108 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xylophone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jml-Oz-qjO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="G0U-vH-jfo">
+                                <rect key="frame" x="5" y="35" width="404" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsr-dc-G8n" userLabel="Key1" customClass="RoundedButton" customModule="Xylophone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="84"/>
+                                        <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="PFN-J3-T3O"/>
+                                            <constraint firstAttribute="width" constant="404" id="SXf-vW-r1F"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="keyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJ9-ph-xXv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krx-li-pwO" userLabel="Key2" customClass="RoundedButton" customModule="Xylophone" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="96.999999999999986" width="394" height="84.666666666666643"/>
+                                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84.5" id="BIS-aw-2Aa"/>
+                                            <constraint firstAttribute="width" constant="394" id="MFu-QE-UkP"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="keyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="prl-QC-WY7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtG-6T-nl3" userLabel="Key3" customClass="RoundedButton" customModule="Xylophone" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="194.66666666666669" width="384" height="84.000000000000057"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="ErP-CW-nPB"/>
+                                            <constraint firstAttribute="width" constant="384" id="GXw-Lj-pEI"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="keyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zE9-fo-P8o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI8-Fe-64h" userLabel="Key4" customClass="RoundedButton" customModule="Xylophone" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="291.66666666666669" width="374" height="84"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="PgE-LY-eye"/>
+                                            <constraint firstAttribute="width" constant="374" id="nNJ-mo-zfq"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="keyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oih-3R-Tw8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cU-8c-eJA" userLabel="Key5" customClass="RoundedButton" customModule="Xylophone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="388.66666666666669" width="364" height="84"/>
+                                        <color key="backgroundColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="364" id="J4P-tz-ODI"/>
+                                            <constraint firstAttribute="height" constant="84" id="PoD-CP-gjc"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="keyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZI-jr-3wi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTL-zK-gLm" userLabel="Key6" customClass="RoundedButton" customModule="Xylophone" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="485.66666666666657" width="354" height="84.333333333333428"/>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="354" id="3HZ-sJ-dut"/>
+                                            <constraint firstAttribute="height" constant="84.5" id="rCq-is-i6y"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="keyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwW-5x-wao"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQA-Cf-xsE" userLabel="Key7" customClass="RoundedButton" customModule="Xylophone" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="583" width="344" height="84"/>
+                                        <color key="backgroundColor" red="0.60784313729999995" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="Yyp-0a-WFi"/>
+                                            <constraint firstAttribute="width" constant="344" id="tNc-RL-lxy"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="keyPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hr1-sV-jfr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Krx-li-pwO" firstAttribute="height" secondItem="dsr-dc-G8n" secondAttribute="height" id="EJ4-oe-7rO"/>
+                                    <constraint firstItem="FtG-6T-nl3" firstAttribute="height" secondItem="dsr-dc-G8n" secondAttribute="height" id="PU5-GO-43E"/>
+                                    <constraint firstItem="SQA-Cf-xsE" firstAttribute="height" secondItem="dsr-dc-G8n" secondAttribute="height" id="Pb7-sU-2ve"/>
+                                    <constraint firstItem="3cU-8c-eJA" firstAttribute="height" secondItem="dsr-dc-G8n" secondAttribute="height" id="Z5P-Wj-jDe"/>
+                                    <constraint firstItem="lTL-zK-gLm" firstAttribute="height" secondItem="dsr-dc-G8n" secondAttribute="height" id="kmx-TF-faZ"/>
+                                    <constraint firstItem="yI8-Fe-64h" firstAttribute="height" secondItem="dsr-dc-G8n" secondAttribute="height" id="uym-0l-kzK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="G0U-vH-jfo" firstAttribute="centerY" secondItem="Jml-Oz-qjO" secondAttribute="centerY" id="Q8a-f6-Ybg"/>
+                            <constraint firstItem="G0U-vH-jfo" firstAttribute="centerX" secondItem="Jml-Oz-qjO" secondAttribute="centerX" id="mSI-k3-Z2g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ec9-kD-ZRk"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
